@@ -1,0 +1,26 @@
+<mat-form-field>
+  <mat-label>Title</mat-label>
+  <input matInput #textTitle />
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>Price</mat-label>
+  <input #textPrice type="number" matInput min="0" value="0" />
+</mat-form-field>
+
+<mat-form-field>
+  <mat-label>description</mat-label>
+  <textarea #textDesc matInput></textarea>
+</mat-form-field>
+
+<p>Rating</p>
+<mat-form-field>
+  <mat-label>Rate</mat-label>
+  <input #textRate type="number" matInput min="0" value="0" />
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Count</mat-label>
+  <input #textCount type="number" matInput min="0" value="0" />
+</mat-form-field>
+
+<button class="create-btn" (click) = "create(textTitle, textPrice, textDesc, textRate, textCount)" >Create Product</button>
